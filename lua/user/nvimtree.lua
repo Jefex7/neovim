@@ -16,6 +16,7 @@ update_focused_file = {
   },
   renderer = {
     root_folder_modifier = ":t",
+    group_empty = true,
     icons = {
       glyphs = {
         default = "",
