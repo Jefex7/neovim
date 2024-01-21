@@ -101,7 +101,16 @@ return packer.startup(function(use)
   use 'christoomey/vim-tmux-navigator'
 
 	-- Git
---	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
+ --	use { "lewis6991/gitsigns.nvim", commit = "2c6f96dda47e55fa07052ce2e2141e8367cbaaf2" }
+
+  -- DAP
+  use "mfussenegger/nvim-dap"
+  use "rcarriga/nvim-dap-ui"
+  use "ravenxrz/DAPInstall.nvim"
+
+  -- Java
+  use "mfussenegger/nvim-jdtls"
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

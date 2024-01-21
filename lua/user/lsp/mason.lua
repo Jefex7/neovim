@@ -3,10 +3,10 @@ local servers = {
 	"html",
 	"tsserver",
 	"pyright",
-	-- "bashls",
+	"bashls",
 	"jsonls",
 	"yamlls",
-  "lua_ls", 
+  "lua_ls",
 }
 
 local settings = {

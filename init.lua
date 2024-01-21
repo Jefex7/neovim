@@ -12,6 +12,7 @@ require "user.harpoon"
 require "user.fugitive"
 require "user.undotree"
 require "user.comment"
+require "user.dap"
 
 -- require "user.transparent"
 

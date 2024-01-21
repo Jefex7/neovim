@@ -78,6 +78,13 @@ M.on_attach = function(client, bufnr)
 	--if client.name == "sumneko_lua" then
 	--	client.server_capabilities.documentFormattingProvider = false
 	--end
+  if client.name == "jdt.ls" then
+    vim.lsp.codelens.refresh()
+    require("jdtls").setup_dap { hotcodereplace = "auto" }
+    require("jdtls.dap").setup_dap_main_class_configs()
+    client.resolved_capabilities.document_formatting = false
+    client.resolved_capabilities.textDocument.completion.completionItem.snippetSupport = false
+  end
 
 	lsp_keymaps(bufnr)
 	local status_ok, illuminate = pcall(require, "illuminate")
